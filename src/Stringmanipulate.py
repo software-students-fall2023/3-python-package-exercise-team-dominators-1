@@ -1,11 +1,11 @@
-from ast import List
+from typing import List
 import collections
 
 # Params: string list;
 # Functionality: return list in which strings are anagrams, then collected in a whole list as result
 
 
-def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+def groupAnagrams(strs: List[str]) -> List[List[str]]:
     # Key, value pairs
     ans = collections.defaultdict(list)
 
@@ -20,7 +20,7 @@ def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
 # Functionality: return boolean checking if s2 contains the permuted version of s1
 
 
-def checkInclusion(self, s1: str, s2: str) -> bool:
+def checkInclusion(s1: str, s2: str) -> bool:
     if len(s1) > len(s2):
         return False
 
@@ -58,33 +58,33 @@ def checkInclusion(self, s1: str, s2: str) -> bool:
 # Functionality: return the longest longest substring without repeating chars
 
 
-class Solution:
-    def lengthOfLongestSubstring(self, s: str) -> int:
-        charSet = set()
-        l = 0
-        res = 0
 
-        for r in range(len(s)):
-            while s[r] in charSet:
-                charSet.remove(s[l])
-                l += 1
-            charSet.add(s[r])
-            res = max(res, r - l + 1)
-        return res
+def lengthOfLongestSubstring(s: str) -> int:
+    charSet = set()
+    l = 0
+    res = 0
+
+    for r in range(len(s)):
+        while s[r] in charSet:
+            charSet.remove(s[l])
+            l += 1
+        charSet.add(s[r])
+        res = max(res, r - l + 1)
+    return res
 
 # Params: 1 string
 # Functionality: return the decoded string 3[a] becomes aaa for instance
 
 
-def decodeString(self, s: str) -> str:
+def decodeString(s: str) -> str:
     stack = []
 
     for char in s:
-        if char is not "]":
+        if char != "]":
             stack.append(char)
         else:
             sub_str = ""
-            while stack[-1] is not "[":
+            while stack[-1] != "[":
                 sub_str = stack.pop() + sub_str
             stack.pop()
 
