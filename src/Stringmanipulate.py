@@ -6,15 +6,19 @@ import collections
 
 
 def groupAnagrams(strs: List[str]) -> List[List[str]]:
-    # Key, value pairs
     ans = collections.defaultdict(list)
-
     for s in strs:
-        count = [0] * 26
+        # Expanded count to accommodate both lowercase and uppercase letters
+        count = [0] * (26 + 26)  # 26 lowercase + 26 uppercase
         for c in s:
-            count[ord(c) - ord("a")] += 1
+            if c.islower():
+                index = ord(c) - ord('a')
+            else:
+                index = 26 + ord(c) - ord('A')
+            count[index] += 1
         ans[tuple(count)].append(s)
-    return ans.values()
+    return list(ans.values())
+
 
 # Params: 2 strings
 # Functionality: return boolean checking if s2 contains the permuted version of s1
