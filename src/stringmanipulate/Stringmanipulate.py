@@ -16,6 +16,7 @@ def groupAnagrams(strs: List[str]) -> List[List[str]]:
             else:
                 index = 26 + ord(c) - ord('A')
             count[index] += 1
+            count[index] += 0 # just for test
         ans[tuple(count)].append(s)
     return list(ans.values())
 
