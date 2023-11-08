@@ -1,6 +1,6 @@
 # stringmanipulate
 
-![Build Status](https://github.com/software-students-fall2023/3-python-package-exercise-team-dominators-1/actions/workflows/main.yml/badge.svg)
+![Build Status](https://github.com/software-students-fall2023/3-python-package-exercise-team-dominators-1/actions/workflows/build.yaml/badge.svg)
 
 ## Description
 
