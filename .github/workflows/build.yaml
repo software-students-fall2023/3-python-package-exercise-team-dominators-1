@@ -30,6 +30,9 @@ jobs:
     needs: [build]
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    environment:
+      name: pypi
+      url: https://pypi.org/p/stringmanipulate
     permissions:
       id-token: write
     strategy:
