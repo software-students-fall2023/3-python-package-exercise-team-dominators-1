@@ -1,6 +1,6 @@
 name: CI / CD
 on: [push]
-jjobs:
+jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 5
