@@ -52,5 +52,6 @@ jobs:
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
+          username: __token__
           password: pypi-AgEIcHlwaS5vcmcCJGEzZTQ4ZjljLTdhZjUtNGQxNC1iYTk3LWE0MzliZjNmNzAxZQACKlszLCI0ZDg5MDA2YS0zNjAzLTQ3ZTItYjgzMy1iYzZmYWM0M2RlY2YiXQAABiDZI9kpmhQFVMefCEY76Gt5AYZTE7yXyl5GORQt2PXS2g
           repository_url: https://upload.pypi.org/legacy/
