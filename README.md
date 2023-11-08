@@ -86,4 +86,5 @@ https://github.com/software-students-fall2023/3-python-package-exercise-team-dom
 
 This package is also available on PyPI:
 
-[Your package on PyPI](https://pypi.org/project/your-package-name/)
+[Your package on PyPI](https://pypi.org/project/stringmanipulate/0.0.2/)
+
