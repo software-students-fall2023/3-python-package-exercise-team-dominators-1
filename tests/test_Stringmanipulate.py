@@ -1,5 +1,5 @@
 import pytest
-from Stringmanipulate import groupAnagrams, checkInclusion, lengthOfLongestSubstring, decodeString
+from src.stringmanipulate.Stringmanipulate import groupAnagrams, checkInclusion, lengthOfLongestSubstring, decodeString
 
 
 # groupAnagrams tests
