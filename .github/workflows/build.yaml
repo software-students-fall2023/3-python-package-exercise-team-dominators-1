@@ -30,6 +30,8 @@ jobs:
     needs: [build]
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    permissions:
+      id-token: write
     strategy:
       matrix:
         python-version: ["3.9", "3.11"]
@@ -51,7 +53,4 @@ jobs:
           pipenv run python -m build .
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          username: __token__
-          password: pypi-AgEIcHlwaS5vcmcCJDFjMWIyMjk4LWJkZjAtNGMzMi04MGEzLWRjMWI0ZTBjZjgxYwACGFsxLFsic3RyaW5nbWFuaXB1bGF0ZSJdXQACLFsyLFsiYjhhNTM5ZTMtNTFiOC00OTgwLThlYjQtZWIzYWQzMjQxMjcwIl1dAAAGIDtHI9ak1ntGaGwVx88GCNKBMFbszKDl2yXCPYNKmJSu
-          repository_url: https://upload.pypi.org/legacy/
+       
