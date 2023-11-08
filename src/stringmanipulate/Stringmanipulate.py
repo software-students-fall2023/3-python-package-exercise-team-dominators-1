@@ -5,7 +5,7 @@ import collections
 # Functionality: return list in which strings are anagrams, then collected in a whole list as result
 
 
-
+def groupAnagrams(strs: List[str]) -> List[List[str]]:
     ans = collections.defaultdict(list)
     for s in strs:
         # Expanded count to accommodate both lowercase and uppercase letters
