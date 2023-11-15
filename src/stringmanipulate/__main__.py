@@ -1,6 +1,6 @@
 # __main__.py
 import argparse
-from Stringmanipulate import groupAnagrams, checkInclusion, decodeString,lengthOfLongestSubstring
+from stringmanipulate.Stringmanipulate import groupAnagrams, checkInclusion, decodeString,lengthOfLongestSubstring
 
 def main():
     parser = argparse.ArgumentParser(description='String Manipulation operations.')
