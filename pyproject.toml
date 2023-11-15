@@ -28,3 +28,6 @@ dependencies = [
 [project.urls]
 "Homepage" = "https://github.com/software-students-fall2023/3-python-package-exercise-team-dominators-1"
 "Bug Tracker" = "https://github.com/software-students-fall2023/3-python-package-exercise-team-dominators-1/issues"
+
+[project.scripts]
+stringmanipulate = "stringmanipulate.__main__:main"
