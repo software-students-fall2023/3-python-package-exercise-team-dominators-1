@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "stringmanipulate"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
   { name="Ethan Sha", email="ys4323@nyu.edu" },
   { name="Megarene Chen", email="jl11703@nyu.edu" },
