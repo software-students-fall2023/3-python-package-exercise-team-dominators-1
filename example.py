@@ -1,4 +1,4 @@
-# Import the stringmanipulate package
+# Import the stringmanipulate package before use
 from stringmanipulate import groupAnagrams, checkInclusion, lengthOfLongestSubstring, decodeString
 
 def main():
